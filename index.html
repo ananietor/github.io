@@ -3,24 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página con fondo rosa</title>
-    <style>
-        body {
-            background-color: pink;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-            font-family: Arial, sans-serif;
-        }
-        h1 {
-            text-align: center;
-            color: #333;
-        }
-    </style>
+    <title>Mi Página Web</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Bienvenidos a mi página con fondo rosa</h1>
+    <header>
+        <nav>
+            <ul class="menu">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#nosotros">Nosotros</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="inicio" class="seccion">
+        <h1>Bienvenido a Mi Página Web</h1>
+        <p>Esta es una página web creada desde cero utilizando HTML y CSS.</p>
+        <img src="imagenes/portada.jpg" alt="Imagen de portada">
+    </section>
+
+    <section id="nosotros" class="seccion">
+        <h2>Sobre Nosotros</h2>
+        <p>Somos una empresa dedicada a ofrecer las mejores soluciones tecnológicas.</p>
+        <img src="imagenes/nosotros.jpg" alt="Equipo de trabajo">
+    </section>
+
+    <section id="servicios" class="seccion">
+        <h2>Nuestros Servicios</h2>
+        <ul>
+            <li>Desarrollo Web</li>
+            <li>Diseño Gráfico</li>
+            <li>Consultoría Tecnológica</li>
+        </ul>
+        <img src="imagenes/servicios.jpg" alt="Servicios que ofrecemos">
+    </section>
+
+    <section id="contacto" class="seccion">
+        <h2>Contáctanos</h2>
+        <p>Puedes comunicarte con nosotros a través del siguiente formulario:</p>
+        <form action="#" method="post">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="email">Correo Electrónico:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" required></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Mi Página Web. Todos los derechos reservados.</p>
+    </footer>
 </body>
 </html>
